@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=gb2312'>
+<BODY id=bkk bgColor=#FFFFFF leftMargin=5 topMargin=0>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" align=center border=0 valign="top">
+ <TBODY>
+  <TR>
+    <TD class=zt style="PADDING-TOP: 15px; BORDER-BOTTOM: black 1px solid" align=right>『<A href="../index.html">返回目录</A>』</TD>
+  </TR>
+ </TBODY>
+</TABLE>
+<BR>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" align=center border=0 valign="top">
+  <TBODY>
+  <TR>
+    <TD align=middle><BR>
+      <DIV id=content align=left><div style="font-size:26px;line-height:60px;font-weight:bold;" >光子飞船飞行问题</div><div style="font-size:16px;line-height:24px;color:#999;" >分类：个人日记</div><div style="font-size:16px;line-height:24px;color:#999;" >日期：2014-06-07 22:31</div><hr/>
+                                                
+                                                <div class="blog_details_20120222"><div>假设惯性系中存在一个初始质量为M的飞船，这个飞船向后喷射光子使自己获得速度，求解它能达到的最大速度。<br/><span>依据动能守恒，变质量飞船m乘以它的当前速度v等于光子质量m'乘以光子速度c&nbsp;<br/><span>&nbsp;并且由于能量守恒，存在M=m+m'<br/><span>&nbsp;代入上式就有：v=m'c/m=(M/m-1)c<br/><span>&nbsp;如果简单地看这个式子，你会非常吃惊，因为M/m-1这个数可以远远大于1，导致v&gt;&gt;c,不但是超光速了，而且是远远超过光速！<br/><span>当然，这说明我们少算了一些东西，事实上M，m两个数不会相差太多，这是由于逼近光速时存在质量变换。<br/><span><br/>假定光子出射质量为m0（相对于飞船），我们先来看一下这个光子在静系中具有多大能量。<br/>设一个具有2m0静质量的质量点分解为两个向相反方向运动的光子，在动系中看这个问题，假定质量点速度为<span style="font-weight:bold">v</span>（黑体表示矢量）质量2m=2m0/k（k=sqr（1-v^2/c^2）话说他们都喜欢用k的时候带个-1次方，反正我这里不遵从正规习惯，无视掉。。），分解的两个光子与该速度方向夹角分别为α,β（搜狗拼音输入法貌似可以输入这些字符=_=）<br/>设两个光子在动系下质量分别为m1,m2，则列能量守恒并约去c^2：<br/><span>2m=m1+m2<br/>列动量守恒：<br/>2m<span style="font-weight:bold">v</span>=m1<span style="font-weight:bold">c1</span>+m2<span style="font-weight:bold">c2</span><br/>沿v方向拆分为标量式：<br/>&nbsp;2mv=m1c·cosα+m2c·cosβ<br/><span>m1c·sinα-m2c·sinβ=0&nbsp;（这里不会画图，总之呢，αβ都是0到π的取值就对了）<br/><span>&nbsp;注意其中的变量数目，m1,m2为未知量，在此用α表示m1，对称的即可用β表示m2.<br/><span>&nbsp;&nbsp;2mv-m1c·cosα=m2c·cosβ 与 <span style="font-weight:bold"></span><span>m1c·sinα=m2c·sinβ两边平方和相加消去β<br/><span>&nbsp;(m2c)^2=(2mv-m1c·cosα<span style="font-weight:normal">)^2+(</span><span>m1c·sinα)^2=(2mv)^2-4mv·m1c·cosα+(m1c)^2<br/><span>将m2=2m-m1代入<br/>&nbsp;[<span>(2m-m1)c]^2=(2mv)^2-4mv·m1c·cosα+(m1c)^2<br/>[<span>4m^2-4m·m1+m1^2]c^2=(2mv)^2-4mv·m1c·cosα+(m1c)^2<br/>[<span>4m^2-4m·m1]c^2=(2mv)^2-4mv·m1c·cosα<br/><span>很幸运这个式子只有m1的一次幂，整理一下就有：<br/><span>[<span>4m^2]c^2=(2mv)^2</span>+4mm1(c^2-vc·cosα)<br/><span>&nbsp;m1=[<span><span>mc^2-mv^2]/(c^2-vc·cosα)<br/><span>除以c^2有：<br/>m1=m·(1-v^2/c^2)&nbsp;/[1-(v/c)cosα]<br/><span>注意到m=m0/k,而m0即为光子在静系中的质量。<br/>m1=m0·k/[1-(v/c)cosα]<br/><span><br/>上述式子即光子在不同惯性系中的能量变换关系，回到之前的问题中，可以看到，v就是飞船的速度，α则是180度，因此有m1=m0·k/(1+v/c)<br/>在mv=m'c中，m'是出射光子的总质量，因此存在关系m'=∑m1<br/><span>考虑每一个时刻出射m1质量的光子，飞船动量变化一个微分，则有：p=p+dp-m1c,即m1c=dp=dmv=mdv+vdm<br/>将m1看做dm'，即cdm'=vdm+mdv<br/><br/><span>&nbsp;m1=m0·k/(1+v/c)转化为微分式：恩，问题应该出在这里，将静质量和速度分开积分才行。<br/><span>dm'=kdm0/(1+v/c)<br/><span style="color:rgb(192, 0, 0)">dm'是增加量，dm0是减少量，好像应该在这里添加个负号哦…………好吧，我找了好久。<br/>修正：<span><font color="#000000">dm'=<span style="color:rgb(192, 0, 0)">-</span>kdm0/(1+v/c)</font></span></span><br/><span>将dm'变成dm0，上面那个式子可换为：<br/><span><span style="color:rgb(192, 0, 0)">-</span>ck/(1+v/c)dm0=vdm+mdv<br/>m=m0/k__dm=dm0/k+m0d(1/k)=dm0/k-m0/k^2dk=dm0/k+m0v/(c^2k^3)dv<br/><span><span style="color:rgb(192, 0, 0)">-</span>ck/(1+v/c)dm0=v[dm0/k+m0v/(c^2k^3)dv]+mdv<br/><span>[v/k<span style="color:rgb(192, 0, 0)">-</span>ck/(1+v/c)]dm0=[m0v^2/(c^2k^3)+m0/k]dv<br/><span>&nbsp;</span><span>[v<span style="color:rgb(192, 0, 0)">-</span>ck^2/(1+v/c)]dm0=[m0v^2/(c^2k^2)+m0]dv<br/><span>&nbsp;k^2=1-v^2/c^2=(1-v/c</span></span>)(1+v/c)<br/><span>v<span style="color:rgb(192, 0, 0)">-</span>ck^2/&nbsp;</span>(1+v/c)=<span>v<span style="color:rgb(192, 0, 0)">-</span>c&nbsp;</span>(1-v/c)=<span style="color:rgb(192, 0, 0)">2v-c</span><br/><span>等式左端剩下<span style="color:rgb(192, 0, 0)">(2v-c)</span>dm0<br/>右端&nbsp;</span>c^2k^2=c^2-v^2，将m0放到分式上面去变成m0c^2-m0v^2约去一项m0v^2整理为m0/k即mdv<br/><span style="color:rgb(192, 0, 0)">(2v-c)</span>dm0=mdv<br/><span>分离变量：<br/>1/m0dm0=1/(2v-c)·1/kdv&nbsp;<br/><span>令p=v/c,对右边进行整理：<br/>1/(2p-1)·1/sqr(1-p^2)dp<br/><span>令p=sint<br/>&nbsp;1/(2sint-1)dt<br/><span>通过查表&nbsp;</span></span></span></span></span>积分……对任意系数a,b的运算sqr(b^2-a^2)简写为u，则<br/>dt/(a+bsint)=1/u·ln|[a·tan(t/2)+b-u]/[a·tan(t/2)+b+u]|<br/>对应上式，显然a=-1，b=2，代入有u=sqr(3)<br/>&nbsp;∫1/(2sint-1)dt=1/u·ln|[2-tan(t/2)-u]/[2-tan(t/2)+u]|<br/>t=arcsinp=arcsin(v/c)<br/>1/(2v-c)·1/kdv=1/u·ln|[2-tan(arcsin(v/c)/2)-u]/[2-tan(arcsin(v/c)/2)+u]|<br/>ln(m0/M)=1/u·ln|[2-tan(arcsin(v/c)/2)-u]/[2-tan(arcsin(v/c)/2)+u]| -1/u·ln|(2-u)/(2+u)|<br/><span>其中u=根号3…………你大爷的，这么复杂………………<br/>咳咳，貌似依然和第一段写的v=(M/m-1)c不一样？<br/><span>嘛，这个问题就不要问我了，&nbsp;在后面的推导中m0指的是飞船静质量，而m指的是动起来以后的质量，两个式子不一样是必须的嘛，不过这两个式子在数学上是否相等就有待考证了【我一定是民科】，总之谁要是搞清楚问题所在的话，欢迎联系我哦~~~~~~~</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div></div>
+                                                
+                                            </DIV></TD></TR>
+  <TR>
+    <TD class=zt align=middle><BR>
+      <DIV align=right>
+      『<A href="../index.html">返回目录</A>』
+<div align="right" style="font-size:12px;">
+  <p>&nbsp;</p>
+  <p>*该资源由 <a href="http://mh-studio.cn">泪寒QQ日志下载器 </a>制作完成，文章版权属原作者所有。</p>
+</div>
+</DIV></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" align=center border=0 
+valign="top">
+  <TBODY>
+  <TR>
+    <TD class=xt style="BORDER-TOP: green 1px solid; PADDING-BOTTOM: 5px; PADDING-TOP: 5px" align=right width="100%"></TD>
+  </TR>
+  </TBODY>
+</TABLE><BR>
+<div style="display:none"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3c30caf1b3270c8b1d311840bd58efba";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div>
+</BODY></HTML>

@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=gb2312'>
+<BODY id=bkk bgColor=#FFFFFF leftMargin=5 topMargin=0>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" align=center border=0 valign="top">
+ <TBODY>
+  <TR>
+    <TD class=zt style="PADDING-TOP: 15px; BORDER-BOTTOM: black 1px solid" align=right>『<A href="../index.html">返回目录</A>』</TD>
+  </TR>
+ </TBODY>
+</TABLE>
+<BR>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" align=center border=0 valign="top">
+  <TBODY>
+  <TR>
+    <TD align=middle><BR>
+      <DIV id=content align=left><div style="font-size:26px;line-height:60px;font-weight:bold;" >GameOfLive中的部分数学问题</div><div style="font-size:16px;line-height:24px;color:#999;" >分类：个人日记</div><div style="font-size:16px;line-height:24px;color:#999;" >日期：2014-04-25 12:14</div><hr/>
+                                                
+                                                <div class="blog_details_20120222">&nbsp;这个游戏以星际文明的生存、死亡为0,1，利用简单地规则和初状态演绎出纷繁复杂的结果。<br/>这最初便是数学家的游戏，现在网上也可以找到游戏exe文件，我便曾尝试过用一个简单地不对称图形最终演绎数千步，最终因为地图大小的极限而“热寂”。<br/><span>规则：对于任意一个点位，与其相邻的有八个点位，它们组成九宫格。若八个相邻点中只有0个或1个文明存活，则该点位文明因寂寞而死亡。若有2个存活，则该点位文明状态维持不变。若有3个、4个存活，则该点位文明改变为存活，若超过4个（5、6、7、8）则该点位文明因为资源不足而死亡。<br/>每一次演绎称为一步。<br/><span>容易看出，这是一个不可逆函数，每一步的初态只能对应一个末态，而一个末态可以对应若干个初态。<br/>已有结论，在任意形状的有限地图中，以任意初态进行演绎的文明最终都将陷入热寂。&nbsp;所谓热寂，是指文明形态的演绎结束了，所有局部维持规则的振动不再发生其它变化。因为每个点位只有有限个状态：存活、死亡；地图中只有有限个格子，因此所有的状态均可以被穷举，而每一个状态都唯一的对应下一个状态，下一个状态要么是被穷举的状态中的一个，要么是它自己，因为只有有限个状态，因此它最终会在某一个区域内闭合，形成局部循环，亦即热寂。<br/><span>&nbsp;该游戏过程中会自发的产生一些有趣的形状，比如“砖”，即四个存活的格子紧凑在一起，由于规则“2则维持”，因此外部的格子不会活，里面的格子也不会死，它就会一直维持当前的状态，直到其它部分影响到他。还有“振子”，它会按照规则变化成另一种形状，而另一种形状继续变化又会回到他自己，因此它会保持振动下去，直到其他部分影响到他。“鸟”和“子弹”则是两种不同的形状，但他们具有共同的特点：飞行，他们也会保持规则的振动，只不过每次振动过后他的位置都会朝某个确定的方向移动，因此它们会保持移动下去，直到“撞墙”“撞砖”或者撞到其它什么东西。<br/><span>&nbsp;<br/><span>好了，说了这么多，其实还不如真实体验一把来的清楚~不过接下来我要说重点了。<br/>上面提到过，对于有限地图， 游戏总会陷入热寂，那么考虑如果是无限地图会怎么样？毫无疑问，由于“鸟”和“子弹”的存在，游戏永远也不会陷入循环，而是以每步一格的速度不断地扩大文明边界。那么我以为这种“以均匀的速度离开发源地”的行为不适宜用作考量“热寂”的标准，那么设定：,1，对于任意图形，若其存在自我保持的移动能力，则规定此类图形为Z图形。2，任何横纵坐标均跨过“文明疆域”的Z图形都予以删除。3，若存在非Z图形触及了“文明疆域”，则文明疆域进行扩大，使其坐标限总是大于存活的非Z图形。4，地图边界要始终大于文明疆域，且至少应满足一个Z图形完成一次演变周期。<br/><span>考察“文明疆域”中的图形，其变化是否可能是无穷的？<span>&nbsp;<br/><span>若其变化是无穷的，则文明疆域必定会无限制扩大，但这个扩张的速度就远远不如“鸟”和“子弹”那样稳定了，其中会有许多时候因为局部热寂使扩张陷入停滞，因此现有的计算机应当是可以进行演绎的。<br/><span>但是毫无疑问，能够“无穷”演绎的初态是少的，不排除可以找到某种算法来寻找可以“无穷”演绎的初态的集合。&nbsp;</span></span></span></span></span></span></span></span></span></div>
+                                                
+                                            </DIV></TD></TR>
+  <TR>
+    <TD class=zt align=middle><BR>
+      <DIV align=right>
+      『<A href="../index.html">返回目录</A>』
+<div align="right" style="font-size:12px;">
+  <p>&nbsp;</p>
+  <p>*该资源由 <a href="http://mh-studio.cn">泪寒QQ日志下载器 </a>制作完成，文章版权属原作者所有。</p>
+</div>
+</DIV></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" align=center border=0 
+valign="top">
+  <TBODY>
+  <TR>
+    <TD class=xt style="BORDER-TOP: green 1px solid; PADDING-BOTTOM: 5px; PADDING-TOP: 5px" align=right width="100%"></TD>
+  </TR>
+  </TBODY>
+</TABLE><BR>
+<div style="display:none"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3c30caf1b3270c8b1d311840bd58efba";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div>
+</BODY></HTML>
